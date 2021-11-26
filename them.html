@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Thêm Sinh Viên</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../trangchinh.css">
+<link rel="stylesheet" type="text/css" href="them.css">
+<script type="text/javascript" src="themsinhvien.js"></script>
+ 
+</head>
+<body>
+ <!-- phần left của Cảnh -->
+<div class="left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li>
+              <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="../giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="../diem/diem.html" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../trangchinh.html">Trang Chủ</a></li>
+        <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="../giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="../diem/diem.html">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html">Học Bổng</a></li>
+      </ul>
+      <br>
+        </div>
+    <br>
+
+  <div class="col-sm-9 right ">
+    <h3>Thêm Sinh Viên</h3>
+    <div class="form">
+      <form name="myform">
+      <div class="form-group ">
+        <label for="">Khoa <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_khoa"></span> 
+        <input type="text" class="form-control" name="khoa" id="khoa" />
+      </div>
+      <div class="form-group">
+        <label for="">Khóa <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_k"></span>
+        <input type="text" class="form-control" name="k" />
+      </div>
+      <div class="form-group">
+        <label for=""> Mã Sinh Viên <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_msv"></span>
+        <input type="text" class="form-control" name="msv" />
+      <div class="form-group">
+        <label for=""> Họ và Tên <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_ten"></span>
+        <input type="text" class="form-control" name="ten" />
+      </div>
+      <div class="form-group">
+        <label for=""> Quê Quán <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_que"></span>
+        <input type="text" class="form-control" name="que"/>
+      </div>
+      <div class="form-group">
+        <label for=""> Giới Tính <span class="txt_red">(*)</span> </label>
+        <span class="txt_red" id="error_gender"></span><br>
+       <input type="radio" name="gender" value="male"  />Nam <input type="radio" name="gender" value="female"  />Nữ
+      </div>
+      <div class="form-group">
+        <label for=""> Số Diên Thoại <span class="txt_red">(*)</span></label>
+        <span class="txt_red" id="error_sdt"></span>
+        <input type="text" class="form-control" name="sdt"/>
+      </div>
+      <div>
+        <input class="ab" type="button" name="" value="Submit" onclick="validform(document.forms.myform);">
+        <input class="as" type="reset" name="" value="Reset">
+      </div>
+    </form>
+  </div>
+ 

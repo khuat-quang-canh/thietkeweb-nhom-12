@@ -1,0 +1,66 @@
+.right .header {
+    background-color: #0abde3;
+    padding: 16px;
+    font-size: 16px;
+}
+.right .main label {
+    padding-left: 28px;
+} 
+@media screen and (max-width: 600px) {
+    .right .header select 
+    {
+        width: 100%
+    }
+}
+.right .search-box {
+    float:right;
+    margin: 10px 20px;
+}
+.right .search-box a:hover {
+    color:red;
+}
+.right .search-box a {
+    text-decoration: none;
+}
+.right h3 {
+    clear: both;
+    text-align: center;
+    color: #e84118;
+    letter-spacing: 1px;
+}
+.right .left {
+    clear: both;
+}
+.right table {
+    width: 100%;
+}
+.right table th {
+    padding: 10px;
+}
+.right table,th,td  {
+    border: 1px solid #333;
+}
+.right .change1{
+    background-color: #d2dae2;
+}
+.right .change2{
+    background-color: #f5cd79;
+}
+.right .nav {
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+.right .nav a {
+    border:1px solid #333;  
+    border-radius: 10px;
+    padding: 8px 16px; 
+    margin: 10px 3px;
+    text-decoration: none;
+    color:white;
+    background-color: #0fbcf9;
+}
+.right .nav a:hover {
+    background-color: #3742fa;
+    border-radius: 0;
+}

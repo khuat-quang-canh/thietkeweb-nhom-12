@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản Lý Sinh Viên - Môn Học</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+<link rel="stylesheet" type="text/css" href="../trangchinh.css">
+<link rel="stylesheet" href="monhoc.css"> 
+</head>
+<body>
+
+ <!-- phần left của Cảnh -->
+<div class="col-sm-3 left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li>
+                <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="../giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="../diem/diem.html" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class=" sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../trangchinh.html">Trang Chủ</a></li>
+        <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="../giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="../diem/diem.html">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html">Học Bổng</a></li>
+      </ul><br>
+     
+        </div>
+    <br>
+  </div>
+</div>
+
+ </div>
+ 
+
+<!-- Phần right của mình -->
+<div class="col-sm-9 right">
+    <div class="header">
+        <label>Loại hình đào tạo : </label>
+        <select >
+            <option value="daotao1">Bằng 2</option>
+            <option value="daotao2">Chính quy</option>
+            <option value="daotao3">Chuyên tu</option>
+            <option value="daotao4">Mở rộng</option>
+            <option value="daotao5">Ngắn hạn</option>
+            <option value="daotao6">Tại chức</option>
+        </select>
+        <label for="hedaotao">Hệ đào tạo : </label>
+        <select>
+            <option value="hedaotao1">DHCQ</option>
+            <option value="hedaotao2">CAOHOC</option>
+            <option value="hedaotao3">LIENTHONG</option>
+            <option value="hedaotao4">LIENTHONG_TX</option>
+        </select>
+        <label for="khoa">Khóa : </label>
+        <select>
+            <option value="khoa1">K54</option>
+            <option value="khoa2">K55</option>
+            <option value="khoa3">K56</option>
+            <option value="khoa4">K57</option>
+            <option value="khoa1">K58</option>
+            <option value="khoa2">K59</option>
+            <option value="khoa3">K60</option>
+            <option value="khoa4">K61</option>
+            <option value="khoa4">K62</option>
+        </select>
+    </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" name="" placeholder="Nhập ngành học">
+            <a href="#">
+                <i class="ti-search"></i>
+            </a>
+        </div>
+    <h3>Chương trình đào tạo Ngành Công Nghệ Thông Tin</h3>
+    <div class="center">
+        <table cellspacing="0" cellpadding="0">
+<!-- Hoc ky 1 -->
+            <tr class="change1">
+                <th></th>
+                <th>HỌC KỲ 1</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>TÊN HỌC PHẦN</th>
+                <th>SỐ TÍN CHỈ</th>
+                <th>MÃ HỌC PHẦN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kỹ năng mềm</td>
+                <td>2</td>
+                <td>QLY17.2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Những nguyên lí cơ bản của chủ nghĩa Mác-Lê Nin F1</td>
+                <td>2</td>
+                <td>MLN01.2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Đại số tuyến tính</td>
+                <td>2</td>
+                <td>DSO02.3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Giải tích 1</td>
+                <td>3</td>
+                <td>GIT01.3 </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tin học đại cương</td>
+                <td>3</td>
+                <td>CPM01.3</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td> Giáo dục thể chất F1 </td>
+                <td>1</td>
+                <td>GDT01.1 </td>
+            </tr>
+            <tr class="change2">
+                <td></td>
+                <td>Cộng</td>
+                <td>14</td>
+                <td></td>
+            </tr>
+<!-- Hoc ky 2 -->
+            <tr class="change1">
+                <th></th>
+                <th>HỌC KỲ 2</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Những nguyên lí cơ bản của chủ nghĩa Mác-Lê Nin F2</td>
+                <td>3</td>
+                <td>MLN02.3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Vật lý điện từ</td>
+                <td>3</td>
+                <td>VLY01.3</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>Giải tích 2</td>
+                <td>3</td>
+                <td>GIT02.3</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td> Giáo dục QP-AN F1</td>
+                <td>3</td>
+                <td>GQP201.3</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td> Giáo dục QP-AN F2 </td>
+                <td>2</td>
+                <td>GQP202.2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Giáo dục QP-AN F3 </td>
+                <td>3</td>
+                <td>GQP203.3 </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Lập trình nâng cao</td>
+                <td>3</td>
+                <td>CPM215.3 </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Giáo dục thể chất F2</td>
+                <td>1</td>
+                <td>GDT02.1 </td>
+            </tr>
+            <tr class="change2">
+                <td></td>
+                <td>Cộng</td>
+                <td>20</td>
+                <td></td>
+            </tr>
+<!-- Hoc ky 3 -->
+            <tr class="change1">
+                <th></th>
+                <th>HỌC KỲ 3</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td rowspan="3">14</td>
+                <td>Chọn 1 trong 2 học phần</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a-Giải tích số</td>
+                <td>2</td>
+                <td>KHM01.2</td>
+            </tr>
+            <tr>
+                <td>b-Bảo trì hệ thống</td>
+                <td>2</td>
+                <td>MHT03.2</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Thiết kế Web</td>
+                <td>3</td>
+                <td>MHT36.3</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td> Toán rời rạc</td>
+                <td>3</td>
+                <td>KHM04.3</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td> Cấu trúc dữ liệu và giải thuật</td>
+                <td>3</td>
+                <td>KHM05.3</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Kiến trúc và tổ chức máy tính</td>
+                <td>3</td>
+                <td>MHT02.3</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Lập trình hướng đối tượng</td>
+                <td>3</td>
+                <td>CPM04.3</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Tư tưởng Hồ Chí Min</td>
+                <td>3</td>
+                <td>HCM01.2</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Giáo dục thể chất F3</td>
+                <td>1</td>
+                <td>GDT03.1 </td>
+            </tr>
+            <tr class="change2">
+                <td></td>
+                <td>Cộng</td>
+                <td>20</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="nav">
+        <a href="#" style="background-color: #3742fa">1</a>
+        <a href="monhoc2.html">2</a>
+        <a href="monhoc3.html">3</a>
+    </div>
+  
+</div>
+</body>
+</html>

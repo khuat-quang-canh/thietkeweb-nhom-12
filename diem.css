@@ -1,0 +1,55 @@
+.right h3{
+  background: #66CCFF;
+  padding: 3px;
+}
+.right .search{
+  margin: 20px 40px;
+}
+.right .search input{
+  width: 90%;
+}
+.right .search input:hover{
+  background: #99CCFF;
+}
+.right table{
+  width: 90%;
+  margin: 0 auto;
+}
+.right table,th,td{
+  border: 1px solid #CCC;
+  text-align: center;
+  padding: 3px 10px;
+}
+.right table th{
+  background: #99CCFF;
+}
+
+.right table tr:nth-child(odd){
+  background-color: #eee; 
+}
+}
+.pagination{
+  list-style: none;
+}
+.right table tr:hover {
+  background-color: #00a8ff;
+}
+.right .download {
+  clear: both;
+  float: right;
+}
+.right .download a {
+  text-decoration: none;
+  color:black;
+  border:1px solid black;
+  display: inline-block;
+  padding: 5px 5px;
+  background: #33FF99;
+  margin: 20px 20px;
+}
+.right .download a:hover {
+  color: #00a8ff;
+}
+.pagination{
+  margin: 20px 300px;
+}

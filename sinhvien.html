@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hồ Sơ Sinh Viên</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../trangchinh.css">
+<link rel="stylesheet" type="text/css" href="sinhvien.css">
+ 
+</head>
+<body>
+ <!-- phần left của Cảnh -->
+<div class="left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li>
+              <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="../giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="../diem/diem.html" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../trangchinh.html">Trang Chủ</a></li>
+        <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="../giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="../diem/diem.html">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html">Học Bổng</a></li>
+      </ul>
+      <br>
+        </div>
+    <br>
+  <div class="col-sm-9 right">
+    <h3>Hồ Sơ Sinh Viên</h3>
+    <div class="search">
+      <input type="text" placeholder="Search..">
+    </div>
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Mã sinh viên</th>
+        <th>Họ và Tên</th>
+        <th>Lớp</th>
+        <th>Giới Tính</th>
+        <th>Ngày sinh</th>
+        <th>Quê quán</th>
+        <th>Số điện thoại</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>201222</td>
+        <td>Khuất Quảng Cảnh</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>11-8-2002</td>
+        <td>Hà Nội</td>
+        <td>048235223</td>
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2354</td>
+        <td>Phạm Tiến Đức</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>23-5-2002</td>
+        <td>Nam Định</td>
+        <td>043952391</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2356</td>
+        <td>Nguyễn Quang Thuần</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>15-9-2002</td>
+        <td>Hà Nội</td>
+        <td>09823412</td>
+        
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>1234</td>
+        <td>Trần Quốc Tuấn</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>14-9-2002</td>
+        <td>Hà Tĩnh</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>64534</td>
+        <td>Nguyễn Thị Mai</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>14-3-2002</td>
+        <td>Quảng Bình</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>3452</td>
+        <td>Trần Kim Sơn</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>15-3-2000</td>
+        <td> Nam Định</td>
+        <td>0923234665</td>
+        
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>122354</td>
+        <td>Nguyễn phương Anh</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>14-9-2002</td>
+        <td>Bắc Ninh</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>3244</td>
+        <td>Nguyễn phương Anh</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>14-9-2002</td>
+        <td>Bắc Ninh</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>436454</td>
+        <td>Nguyễn phương Anh</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>14-9-2002</td>
+        <td>Bắc Ninh</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>1356334</td>
+        <td>Nguyễn thị Yến</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>3-2-2001</td>
+        <td>Bắc Ninh</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>156755</td>
+        <td>Hoàng Văn Nam</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>14-9-2002</td>
+        <td>Sơn La</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>23434</td>
+        <td>Nguyễn Hoàng Nam</td>
+        <td>CNTT5</td>
+        <td>Nam</td>
+        <td>14-9-2002</td>
+        <td>Bắc Cạn</td>
+        <td>092345234</td>
+        
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>234565</td>
+        <td>Nguyễn Lan Phuong</td>
+        <td>CNTT5</td>
+        <td>Nữ</td>
+        <td>14-9-2002</td>
+        <td>Bắc Ninh</td>
+        <td>092345234</td>
+        
+      </tr>
+    </table>
+    <div class="download">
+        <a href="#" download="Điểm">Tải Về </a>
+    </div>
+     <ul class="pagination">
+       <li><a href="#">>></a></li>
+       <li><a href="#">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#"><<</a></li>
+
+     </ul>   
+</div>
+
+</body>
+</html>

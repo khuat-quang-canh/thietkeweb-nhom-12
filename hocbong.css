@@ -1,0 +1,85 @@
+.right .nav {
+  background-color: #0abde3;
+}
+.right .nav p {
+  color:#fff;
+  padding: 10px 15px;
+}
+.right .nav .dropdown_nav {
+  list-style: none;
+}
+.right .nav > li {
+  position: relative;
+}
+.right .nav > li {
+  display: inline-block;
+}
+.right .nav li {
+  position: relative;
+}
+.right .dropdown_nav > li > a,
+.right .nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.right .nav li a{
+  text-decoration: none;
+  line-height: 46px;
+  display: block;
+}
+.right .dropdown_nav  {
+  list-style: none;
+}
+.right .nav li:hover .dropdown_nav {
+  display: block;
+}
+.right .nav > li:hover >a,
+.right .nav .dropdown_nav li:hover a {
+  color: #000;
+  background-color: #7efff5;
+}
+.right .nav .dropdown_nav {
+  display: none; 
+  position: absolute;
+  min-width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.right .nav .dropdown_nav a{
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+.right .nav .nav-arrow-down{
+  font-size: 14px;
+}
+.right form label {
+  color :#fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .right .nav select 
+  {
+      width: 100%
+  }
+}
+.right .search {
+  padding-top: 10px;
+}
+.right #myTable tr:hover {
+  background-color: #00a8ff;
+}
+.right .download {
+  clear: both;
+  float: right;
+}
+.right .download a {
+  text-decoration: none;
+  color:black;
+  border:1px solid black;
+  display: inline-block;
+  margin:10px 0;
+}
+.right .download a:hover {
+  color: red;
+}

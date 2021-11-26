@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản Lý Sinh Viên - Học Bổng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+<link rel="stylesheet" type="text/css" href="../trangchinh.css">
+<link rel="stylesheet" href="hocbong.css"> 
+</head>
+<body>
+
+ <!-- phần left của Cảnh -->
+<div class="col-sm-3 left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li>
+              <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="../giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="../diem/diem.html" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class=" sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../trangchinh.html">Trang Chủ</a></li>
+        <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="../giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="../diem/diem.html">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html">Học Bổng</a></li>
+      </ul><br>
+     
+        </div>
+    <br>
+  </div>
+</div>
+
+ </div>
+ 
+
+<!-- Phần right của mình -->
+<div class="col-sm-9 right">
+  <div class="nav" >
+      <li>
+          <p>KHOA</p>
+      </li>
+      <li>
+          <a href="#">
+              Công nghệ thông tin
+              <i class="nav-arrow-down ti-angle-down"></i>
+          </a>
+          <ul class="dropdown_nav">
+              <li>
+                  <a href="#">Kinh tế vận tải</a>
+              </li>
+              <li>
+                  <a href="#">Công trình</a>
+              </li>
+              <li>
+                  <a href="#">Kinh tế xây dựng</a>
+              </li>
+          </ul>
+      </li>
+      <li>
+          <form>
+              <label>Năm học:</label>
+              <select name="year">
+                <option >2020-2021</option>
+                <option >2019-2020</option>
+                <option >2018-2019</option>
+              </select>
+            </form>
+      </li>
+      <li>
+          <form>
+              <label>Học Kỳ:</label>
+              <select name="semester">
+                <option >I</option>
+                <option >II</option>
+              </select>
+            </form>
+      </li>
+  </div>
+  
+  <div class="search">
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  </div>
+  <br>
+  <table class="table table-bordered table-striped">
+      <thead>
+          <tr class="firsttable">
+              <th>STT</th>
+              <th>Mã sinh viên</th>
+              <th>Họ tên sinh viên</th>
+              <th>Lớp-Khóa</th>
+              <th>Học bổng loại</th>
+              <th>Học kỳ</th>
+              <th>Số tiền</th>
+          </tr>
+      </thead>
+      <tbody id="myTable">
+      <tr>
+          <td>1</td>
+          <td>181203458</td>
+          <td>Nguyễn Văn An</td>
+          <td>K59.CNTT1</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>181200697</td>
+          <td>Khuất Văn Chung</td>
+          <td>K59.CNTT2</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>181203228</td>
+          <td>Lại Thị Phương</td>
+          <td>K59.CNTT4</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>181210675</td>
+          <td>Bùi Hữu Đức Hoàng</td>
+          <td>K59.CNTT3</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>191202007</td>
+          <td>Vũ Hải Đăng</td>
+          <td>K60.CNTT2</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>191203366</td>
+          <td>Nguyễn Văn Sang</td>
+          <td>K60.CNTT1</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>191200490</td>
+          <td>Nguyễn Thị Thu Hà</td>
+          <td>K60.CNTT1</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>201200326</td>
+          <td>Phùng Thị Mỹ Tâm</td>
+          <td>K61.CNTT5</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>201207797</td>
+          <td>Lê Văn Sỹ</td>
+          <td>K61.CNTT5</td>
+          <td>Xuất sắc</td>
+          <td>I</td>
+          <td>1,521,000</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>201200116</td>
+          <td>Nguyễn Ngọc Hiệp</td>
+          <td>K61.CNTT2</td>
+          <td>Tốt</td>
+          <td>I</td>
+          <td>1,346,000</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>201200325</td>
+          <td>Nguyễn Tiến Tài</td>
+          <td>K61.CNTT3</td>
+          <td>Tốt</td>
+          <td>I</td>
+          <td>1,346,000</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td>201210257</td>
+          <td>Nguyễn Đức Nguyên</td>
+          <td>K61.CNTT3</td>
+          <td>Tốt</td>
+          <td>I</td>
+          <td>1,346,000</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td>201200193</td>
+          <td>Vũ Trung Kiên</td>
+          <td>K61.CNTT2</td>
+          <td>Tốt</td>
+          <td>I</td>
+          <td>1,346,000</td>
+      </tr>
+      </tbody>
+  </table>
+  
+  <div class="download">
+    <a href="HOC BONG GUI CAC LOP.xlsx" download="Hoc_Bong">Tải Về Máy Tại Đây</a>
+  </div>
+  </div>
+</body>
+</html>

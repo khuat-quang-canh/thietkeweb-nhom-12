@@ -1,0 +1,36 @@
+
+.right input{
+	background: #EEEEEE;
+}
+.right{
+	padding: 20px 15px;
+}
+.right h3{
+	background:#66CCFF;
+    padding: 3px;
+}
+.right input:hover{
+	background: #CCFFCC;
+}
+.right .ab{
+	background: #99FFFF;
+	font-size: 17px;
+	padding: 5px 5px;
+
+	margin: 15px 40px;
+}
+.right .as{
+	background: #FF9966;
+	font-size: 17px;
+	padding: 5px 5px;
+	margin: 15px 10px;
+}
+.txt_red{
+	color: red;
+	font-size: italic;
+}
+.form{
+	width: 50%;
+    margin: 0 auto;
+    font-size: 15px;
+}

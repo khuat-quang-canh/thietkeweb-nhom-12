@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản Lý Sinh Viên - Giảng Viên</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+<link rel="stylesheet" type="text/css" href="../trangchinh.css">
+<link rel="stylesheet" href="giangvien.css"> 
+</head>
+<body>
+
+ <!-- phần left của Cảnh -->
+<div class="col-sm-3 left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Danh sách sinh viên</a></li>
+              <li><a href="#">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="../giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="#" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class=" sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../trangchinh.html">Trang Chủ</a></li>
+        <li><a href="../sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="../themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="../giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="../monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="../diem/diem.html">Điểm</a></li>
+        <li><a href="../hocbong/hocbong.html">Học Bổng</a></li>
+      </ul><br>
+     
+        </div>
+    <br>
+  </div>
+</div>
+
+ </div>
+ 
+
+<!-- Phần right của mình -->
+<div class="col-sm-9 right">
+    <div class="nav">
+        <p>KHOA</p>
+        <li>
+            <a href="#">
+                Công trình
+                <i class="nav-arrow-down ti-angle-down"></i>
+            </a>
+            <ul class="dropdown_nav">
+                <li>
+                    <a href="#">Kinh tế vận tải</a>
+                </li>
+                <li>
+                    <a href="#">Công nghệ thông tin</a>
+                </li>
+                <li>
+                    <a href="#">Kinh tế xây dựng</a>
+                </li>
+            </ul>
+        </li>
+        <p>BỘ MÔN</p>
+        <li>
+            <a href="#">
+                Sức bền vật liệu
+                <i class="nav-arrow-down ti-angle-down"></i>
+            </a>
+            <ul class="dropdown_nav">
+                <li>
+                    <a href="#">Cầu hầm</a>
+                </li>
+                <li>
+                    <a href="#">Trắc địa</a>
+                </li>
+            </ul>
+        </li>
+    </div> 
+        <div class="content">
+            <table>
+                <tr class="firsttable">
+                    <th>STT</th>
+                <th>Tên Giảng Viên</th>
+                <th>Năm Sinh</th>
+                <th>Thâm niên</th>
+                <th>Khoa</th>
+                <th>Bộ Môn</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lương Xuân Bính</td>
+                <td>1975</td>
+                <td>19 năm</td>
+                <td>Công trình</td>
+                <td>Sức bền vật liệu</td>
+                <td>hiengt79@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tạ Thị Hiền</td>
+                <td>1979</td>
+                <td>14 năm</td>
+                <td>Công trình</td>
+                <td>Sức bền vật liệu</td>
+                <td>ngduytien@utc.edu.vn</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vũ Ngọc Linh</td>
+                <td>1984</td>
+                <td>9 năm</td>
+                <td>Công trình</td>
+                <td>Sức bền vật liệu</td>
+                <td>vnlsbvl@utc.edu.vn</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Vũ Ngọc Trinh</td>
+                <td>1982</td>
+                <td>15 năm</td>
+                <td>Công trình</td>
+                <td>Sức bền vật liệu</td>
+                <td>	trinhsbvl@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Vũ Thị Nga</td>
+                <td>1981</td>
+                <td>10 năm</td>
+                <td>Công trình</td>
+                <td>Sức bền vật liệu</td>
+                <td>ngahpnh@utc.edu.vn</td>
+            </tr>
+            <!-- thêm -->
+            <tr>
+              <td>6</td>
+              <td>Nguyễn Xuân Lựu</td>
+              <td></td>
+              <td></td>
+              <td>Công trình</td>
+              <td>Sức bền vật liệu</td>
+              <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Nguyễn Đăng Hanh</td>
+            <td>1984</td>
+            <td>1 năm</td>
+            <td>Công trình</td>
+            <td>Sức bền vật liệu</td>
+            <td>hanhnd@utc.edu.vn</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Đỗ Xuân Quý</td>
+            <td>1979</td>
+            <td>17 năm</td>
+            <td>Công trình</td>
+            <td>Sức bền vật liệu</td>
+            <td>quysbvl@utc.edu.vn</td>
+          </tr>
+         
+            </table>
+        </div>
+        <footer>
+            <h1>Thông tin về khoa</h1>
+            <p><b>Địa Chỉ: </b>Phòng 106 Nhà A6 – Trường Đại học Giao thông vận tải – Láng Thượng – Đống Đa – Hà Nội </p>
+            <p><b>Điện thoại: </b>(024) 37660155</p>
+            <p><b>FB Fanpage: </b><a href="https://www.facebook.com/fceutc">https://www.facebook.com/fceutc</a></p>
+            <p><b>Website: </b><a href="http://civil.utc.edu.vn/">http://civil.utc.edu.vn/</a></p>
+            <p>Trưởng khoa: PGS.TS Bùi Tiến Thành</p>
+            <p>Bí thư đảng ủy Khoa: PGS.TS Lê Hải Hà</p>
+            <p>Phó trưởng khoa: TS Nguyễn Xuân Tùng</p>
+        </footer>
+        </div>
+</body>
+</html>
