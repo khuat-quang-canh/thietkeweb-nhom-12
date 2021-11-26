@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản Lý Sinh Viên</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="trangchinh.css">
+ 
+</head>
+<body>
+ <!-- phần left của Cảnh -->
+<div class="left">
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="dropdown dropleft">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+            <span class="caret"></span></button>
+            
+        <div class="dropdown-menu">
+            <div class="dropdown-item" class="search-container dropdown-item ">
+              
+                  <input type="text" placeholder="Mã Sinh Viên.." name="search"><br>
+                  <input type="text" placeholder="Họ và Tên.." name="search"><br>
+                  <input type="text" placeholder="Khóa.." name="search"><br>
+                  <input type="text" placeholder="Khoa.." name="search"><br>
+                  <input type="text" placeholder="Quê Quán.." name="search">
+            </div>
+           
+         </div>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.utc.edu.vn/"><img src="/image/logo.png" alt="ẢNh UTC"></a>
+     
+      <a class=" navbar-brand" href="#">QUẢN LÝ SINH VIÊN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../trangchinh.html">TRANG CHỦ</a></li>
+        
+        <li><a href="#sinhvien" class="btn btn-info" data-toggle="collapse" style="background-color:rgb(35, 55, 56);">Sinh Viên</a>
+          <div id="sinhvien" class="collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="./sinhvien/sinhvien.html">Danh sách sinh viên</a></li>
+              <li><a href="./themsinhvien/them.html">Thêm Sinh Viên</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a  href="./giangvien/giangvien.html" style="background-color:rgb(35, 55, 56);">Giảng Viên</a></li>
+        <li><a href="./monhoc/monhoc1.html" style="background-color:rgb(35, 55, 56);">Môn Học</a></li>
+        <li><a href="./diem/diem.html" style="background-color:rgb(35, 55, 56);">Điểm</a></li>
+        <li><a href="./hocbong/hocbong.html" style="background-color:rgb(35, 55, 56);">Học Bổng</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <img src="/image/UTC.png" alt="ẢNh UTC">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="trangchinh.html">Trang Chủ</a></li>
+        <li><a href="./sinhvien/sinhvien.html">Danh sách sinh viên</a></li> 
+        <li><a href="./themsinhvien/them.html">Thêm Sinh Viên</a></li>
+        <li><a href="./giangvien/giangvien.html">Giảng Viên</a></li>
+        <li><a href="./monhoc/monhoc1.html">Môn Học</a></li>
+        <li><a href="./diem/diem.html">Điểm</a></li>
+        <li><a href="./hocbong/hocbong.html">Học Bổng</a></li>
+      </ul>
+      <br>
+        </div>
+    <br>
+    
+   
+    <div class="tab-content">
+      <div class="col-sm-9">
+        <div id="section1" class="tab-pane fade in active">
+          <div class=" hidden-xs hidden-sm hidden-md ">
+            <header class="col-lg-12">
+              <div class="dropdown dropleft">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm
+                  <span class="caret"></span></button>
+                  
+              <div class="dropdown-menu">
+                  <div class="dropdown-item" class="search-container dropdown-item ">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li><input type="text" placeholder="Mã Sinh Viên.." name="search"></li>
+                      <li><input type="text" placeholder="Họ và Tên.." name="search"></li>
+                      <li><input type="text" placeholder="Khóa.." name="search"></li>
+                      <li> <input type="text" placeholder="Khoa.." name="search"></li>
+                      <li><input type="text" placeholder="Quê Quán.." name="search"></li>
+                    </ul>
+                         
+                  </div>
+                 
+               </div>
+            </div>
+           
+            <img src="/image/logo.png" alt="ẢNh UTC">
+           
+            <a class=" navbar-brand" href="#">HỆ THỐNG QUẢN LÝ SINH VIÊN</a>
+            </header><br>
+          </div>
+     
+        
+      
+      
+      <!-- <div class="well">
+        <h4>Dashboard</h4>
+        <p>Some text..</p>
+      </div> -->
+      <div class="col-sm-12 col-md-12 col-lg-12">
+         <p> </p>
+       <p></p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 ">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/sinhvien.png" alt="" style="width:70px" >
+              <div class="caption">
+                <h3>Danh Sách Sinh Viên</h3>
+                
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/chuongtrinhhoc.png" alt="Nature"  style="width:70px" >
+              <div class="caption">
+              <h3>Chương Trình Học</h3> 
+              </div>
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" >
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/bangdiem.png" alt="Fjords" style="width:70px">
+              <div class="caption">
+               <h3>Điểm Tổng Kết</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/hoidap.png" alt="Fjords" style="width:70px">
+              <div class="caption">
+               <h3>Hỏi-Đáp</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/hososinhvien.png" alt="Fjords" style="width:70px">
+              <div class="caption">
+               <h3>Hồ Sơ Sinh Viên</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/image/giangvien.png" alt="Fjords" style="width:70px">
+              <div class="caption">
+               <h3>Giảng Viên</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <h3>THÔNG TIN ĐÁNG CHÚ Ý</h3>
+      <div class="row ">
+        <div class="col-sm-12">
+          <div class="well">
+          <ul>
+          <li><a href="https://moet.gov.vn/tintuc/Pages/tt-gddt-hang-quy.aspx">THÔNG TIN GIÁO DỤC VÀ ĐÀO TẠO HÀNG QUÝ</a></li>
+           <li><a href="http://csdldh.moet.gov.vn/Account/Login?ReturnUrl=%2F">HỆ THỐNG THỐNG KÊ GIÁO DỤC ĐẠI HỌC</a></li>
+           <li><a href="https://thituyensinh.vn/">CỔNG THÔNG TIN TUYỂN SINH</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Sessions</h4>
+            <p>10 Million</p> 
+          </div>
+        </div>
+        
+        
+      
+        <div class="col-sm-3">
+          <div class="well" style="background: url(/image/nensinhvien.jpg);">
+            <h4>Pages</h4>
+            <p>100 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Sessions</h4>
+            <p>10 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Bounce</h4>
+            <p>30%</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div id="section2" class="tab-pane fade">
+      </div>
+    <div id="section3" class="tab-pane fade">
+      </div>
+    <div id="section4" class="tab-pane fade">
+     </div> -->
+
+
+
+    </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<div class=" modal-footer"><footer > Bài làm được thực hiện bởi nhóm 12</footer></div>
+
+</body>
+</html>
